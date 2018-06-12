@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(320 / 750 * 100px);
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: calc(360 / 750 * 100px);
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: calc(375 / 750 * 100px);
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: calc(414 / 750 * 100px);
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 703975 */
+    src: url('//at.alicdn.com/t/font_703975_cdfciakoqp4.eot');
+    src: url('//at.alicdn.com/t/font_703975_cdfciakoqp4.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_703975_cdfciakoqp4.woff') format('woff'),
+    url('//at.alicdn.com/t/font_703975_cdfciakoqp4.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_703975_cdfciakoqp4.svg#iconfont') format('svg');
+}
+
+ul{
+    list-style: none;
+}
+
+
+.box {
+    /*0.88*50=44*/
+    height: 0.88rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.88rem;
+    position: relative;
+    padding-left: 0.15rem;
+    background: #f7f7f7;
+}
+
+.back {
+    font-size: 0.3rem;
+    font-weight: normal;
+    position: absolute;
+    padding-left: 0.5rem;
+    color: #007aff;
+    background: url("IMG_0024_03.png") no-repeat left center / .3rem .3rem;
+}
+
+.search-box {
+    height: 1.05rem;
+    padding: 0 0.32rem 0.32rem 0.32rem;
+    background: #f7f7f7;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    background: #e4e4e6 url("IMG_0024_07.png") no-repeat 0.15rem center / 0.32rem 0.32rem;
+    border:none;
+    padding-left: 0.55rem;
+    border-radius: 0.2rem;
+}
+
+.address-box{
+    height: 0.8rem;
+    background: #f4f4f4;
+    font-size: .25rem;
+    line-height: 0.8rem;
+    padding-left: 0.32rem;
+    border-bottom: 1px #ababab solid;
+    border-top: 1px #ababab solid;
+}
+
+/* DPR 750 375 */
+@media screen and (min-device-aspect-ratio: 2),(-webkit-device-pixel-ratio: 2) {
+    .address{
+        border-width: 0.5px;
+    }
+}
+@media screen and (min-device-aspect-ratio: 3),(-webkit-device-pixel-ratio: 3) {
+    .address{
+        border-width: 0.333333333px;
+    }
+}
+
+.address-list {
+    height: 2.5rem;
+    width: auto;
+    padding-top: .45rem;
+    padding-left: .42rem;
+    border-bottom: 1px #c8c7cc solid;
+}
+
+.pic img {
+    float: left;
+    width: 2rem;
+    height: 1.55rem;
+}
+
+.info{
+    float: left;
+    padding-left: 0.3rem;
+    color: #000;
+}
+
+.info .name{
+    font-size: 14px;
+    line-height: 0.58rem;
+}
+
+.info .address,.info .time {
+    font-size: 12px;
+    line-height: .38rem;
+}
+
+.more {
+    float: left;
+    padding-left: 1.56rem;
+    padding-top: .62rem;
+}
+
+.more img{
+    width: 0.2rem;
+    height: 0.3rem;
+}
+
+.index {
+    width: .3rem;
+    height: 8.5rem;
+    position: fixed;
+    right: 0;
+    top: 3rem;
+    float: left;
+    font-size: 10px;
+    text-align: center;
+    color:#007aff;
+}
+
+.footer {
+    height: .99rem;
+    width: 100%;
+    border-top:1px #b2b2b2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    color: #989898;
+}
+
+.footer li{
+    width: .9rem;
+    height: .99rem;
+    font-size: .2rem;
+    text-align: center;
+}
+
+/*iconfont 引入字体 */
+.footer .pic{
+    width: .9rem;
+    /*height: .66rem;*/
+    line-height: .62rem;
+    font-family: 'iconfont';
+}
+
+.footer li.active{
+    color: #007aff;
+}
+
+
+
